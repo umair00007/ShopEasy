@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Design tokens: one place to change the brand colour/font for the whole app. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Matcha green (brand) */
+  --color-brand-50: #f3f7ec;
+  --color-brand-100: #e4edd2;
+  --color-brand-500: #8aa860;
+  --color-brand-600: #6b8e3d;
+  --color-brand-700: #55712f;
+
+  /* Light brown (warm neutrals) replace Tailwind's cool slate greys */
+  --color-slate-50: #faf6f0;
+  --color-slate-100: #f1e9dd;
+  --color-slate-200: #e3d6c3;
+  --color-slate-300: #cdbb9f;
+  --color-slate-400: #a89478;
+  --color-slate-500: #8a7660;
+  --color-slate-600: #6e5c4a;
+  --color-slate-700: #55463a;
+  --color-slate-800: #3d3229;
+  --color-slate-900: #2a221b;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}

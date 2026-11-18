@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets: NEVER commit these (AWS keys, DB passwords, JWT secret)
+.env
+.env.*
+!.env.example
+
+# Build output
+client/dist/
+
+# Logs & OS junk
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+.vscode/*
+!.vscode/extensions.json

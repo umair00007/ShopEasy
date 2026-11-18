@@ -1,0 +1,38 @@
+{
+  "name": "shopeasy-server",
+  "version": "1.0.0",
+  "description": "Shabbir Traders REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "check-s3": "node src/seed/checkS3.js",
+    "upload-images": "node src/seed/uploadImages.js",
+    "seed": "node src/seed/products.js",
+    "make-admin": "node src/seed/makeAdmin.js",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1171.0",
+    "@aws-sdk/s3-request-presigner": "^3.1171.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.2",
+    "morgan": "^1.12.1",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.6.0",
+    "razorpay": "^2.9.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
